@@ -419,7 +419,7 @@ class $modify(PlayerObject) {
 		bool p1NotBuffering = p1StartedOnGround
 			|| this->m_touchingRings->count()
 			|| this->m_isDashing
-			|| (this->m_isDart || this->m_isBird || this->m_isShip || this->m_isSwing || this->m_isRobot); // robot jump height depends on hold duration, so releases midair need precision too
+			|| (this->m_isDart || this->m_isBird || this->m_isShip || this->m_isSwing || this->m_isRobot); // add robot to list
 
 		bool p2NotBuffering = p2StartedOnGround
 			|| p2->m_touchingRings->count()
